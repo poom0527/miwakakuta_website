@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>M PLUS 1p テスト</title>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'M PLUS 1p', sans-serif;
+    }
+
+ /* ヘッダー */
+   header {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  padding: 1em 2em;
+  display: flex;
+  flex-wrap: wrap; /* ← 折り返し対応 */
+  justify-content: space-between; /* ← 画面に収まるよう調整 */
+  align-items: center;
+  z-index: 10;
+}
+
+    .site-name {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: rgb(37, 37, 36);
+      white-space: nowrap;
+    }
+
+    .nav {
+      display: flex;
+      gap: 2em;
+    }
+
+    .nav a {
+      color: rgb(37, 37, 36);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .nav a:hover {
+      opacity: 0.7;
+    }
+
+    /* メインビジュアル */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background-image: url("images/header.jpg"); /* ← 自分の画像に置き換え */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .hero-text {
+      position: absolute;
+      bottom: 5em;
+      left: 3em;
+      color: white;
+      font-size: 2rem;
+      font-weight: 300;
+    }
+
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2列レイアウト */
+      gap: 7em;
+      max-width: 1000px;
+      margin: 8em;
+    }
+
+    .work-grid a {
+      display: block;
+      overflow: hidden;
+      border-radius: 0px;
+      box-shadow: 0 0px 0px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .work-grid a:hover {
+      transform: scale(1.03);
+    }
+      .work-grid img {
+      width: 85%;
+      height: auto;
+      display: block;
+    }
+  .work-title {
+  margin-top: 0.5em;
+  text-align: 30em;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(71, 71, 71);
+}
+
+.work-item {
+  position: relative;
+}
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.image-wrapper img {
+  width: 90%;
+  display: block;
+}
+    @media (max-width: 768px) {
+      .work-grid {
+        grid-template-columns: 1fr; /* スマホでは1列に */
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ヘッダー -->
+  <header>
+    <h1 class="site-name">MIWA KAKUTA</h1>
+    <nav class="nav">
+      <a href="index.html">home</a>
+      <a href="work.html">work</a>
+      <a href="about.html">about</a>
+      <a href="contact.html">contact</a>
+    </nav>
+  </header>
+  </style>
+</head>
+<body>
+
+  <h1></h1>
+<div class="work-grid">
+  <div class="work-item">
+    <a href="work1.html">
+      <div class="image-wrapper">
+        <img src="images/title/work1.jpg" alt="作品1">
+        <div class="work-title">from two in one, 2024</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="work-item">
+    <a href="work2.html">
+      <div class="image-wrapper">
+        <img src="images/title/work2.jpg" alt="作品2">
+        <div class="work-title">from two in one, 2024</div>
+      </div>
+    </a>
+  </div>
+
+
+  <div class="work-item">
+    <a href="work3.html" target="_blank">
+      <img src="images/title/work3.jpg" alt="">
+    </a>
+    <p class="work-title">Artist in resincey at Carp Gallery</p>
+  </div>
+
+  <div class="work-item">
+    <a href="work4.html" target="_blank">
+      <img src="images/title/work4.jpg" alt="">
+    </a>
+    <p class="work-title">Artist in resincey at Carp Gallery</p>
+  </div>
+</div>
+
+
+</body>
+</html>
