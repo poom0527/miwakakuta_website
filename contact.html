@@ -30,10 +30,10 @@
       z-index: 10;
     }
 
-    .site-name {
+     .site-name {
       font-size: 1.6rem;
-      font-weight: 700;
-      color: rgb(37, 37, 36);
+      font-weight: 300;
+      color: rgb(3, 3, 3);
       white-space: nowrap;
     }
 
@@ -43,9 +43,9 @@
     }
 
     .nav a {
-      color: rgb(37, 37, 36);
+       color: rgb(3, 3, 3);
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 300;
       font-size: 1.1rem;
     }
 
@@ -131,21 +131,21 @@
     </nav>
   </header>
 
-  <!-- Contact セクション -->
-  <section id="contact">
-    <h2>CONTACT</h2>
+ <!-- Contact セクション -->
+<section id="contact" style="margin-top: 120px; padding: 2em; text-align: center;">
+  <h2>CONTACT</h2>
 
-    <form action="mailto:your.email@example.com" method="POST" enctype="text/plain">
-      <input type="email" name="email" placeholder="Your Email" required class="contact-input">
-      <textarea name="message" placeholder="Your Message" required class="contact-input"></textarea>
-      <button type="submit" class="contact-button">Send</button>
-    </form>
+  <form action="https://formspree.io/f/xblyqdnv" method="POST" style="max-width: 600px; margin: auto;">
+    <input type="email" name="email" placeholder="Your Email" required class="contact-input" style="width:100%; padding: 1em; margin-bottom: 1em; border: 1px solid #ccc;">
+    
+    <textarea name="message" placeholder="Your Message" required rows="6" class="contact-input" style="width:100%; padding: 1em; border: 1px solid #ccc;"></textarea>
+    
+    <button type="submit" class="contact-button" style="margin-top: 1em; padding: 0.8em 2em; background: #333; color: white; border: none; cursor: pointer;">Send</button>
+  </form>
 
-    <div class="contact-instagram">
-      <p></p>
-      <a href="https://www.instagram.com/yourusername" target="_blank">Instagram</a>
-    </div>
-  </section>
+  <p style="margin-top: 2em;">  </p>
+  <a href="https://www.instagram.com/miwakakuta" target="_blank" style="color: #333; font-weight: bold; text-decoration: none;">Instagram →</a>
+</section>
 
 </body>
 </html>
